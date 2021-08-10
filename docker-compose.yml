@@ -3,6 +3,8 @@ services:
     container_name: app
     build: .
     stop_signal: SIGINT
+    ports:
+      - "4567:4567"
   prometheus-server:
     container_name: prometheus-server
     volumes:
